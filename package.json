@@ -1,0 +1,14 @@
+{
+  "name": "Status checker Bot",
+  "version": "1.0.0",
+  "description": "Status Checker",
+  "main": "bot.js",
+  "author": "Tuan Le",
+  "dependencies": {
+    "discord.js": "^11.4.2",
+    "is-port-reachable": "^2.0.0",
+    "ssh2": "^0.8.2",
+    "wake_on_lan": "^1.0.0",
+    "xmlhttprequest": "^1.8.0"
+  }
+}
