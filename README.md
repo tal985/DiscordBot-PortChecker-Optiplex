@@ -21,4 +21,3 @@ My "auth.json" is omitted due to containing tokens and passwords. See authexampl
 - [x] Implement basic TCP portchecking
 - [x] Set up turning on, off, and restarting the Optiplex
 - [ ] Set up permissions for turning off and rebooting the Optiplex
-- [ ] Check status of Minecraft Server 

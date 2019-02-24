@@ -37,8 +37,6 @@ bot.on("message", message =>
     {
         var msg = null;
         var args = message.content.substring(prefix.length).split(" ");
-        var cmd = message.content.substring(prefix.length).split(" ")
-        
 
         switch (args[0].toLowerCase())
         {
@@ -198,14 +196,10 @@ function checkIPArgs(ip_address, port_number, message)
 //Check if inputted IP is bot's IP, then transforms it to the internal IP if it is.
 function EIPtoIIP(port)
 {
-    switch(port)
-    {
-        case(222):
-            return ipOpti;
-        case(2222):
-            return ipPi;
-    }
-
+    if((port >= 25565 && port <= 25570) || 222)
+        return ipOpti;
+    else if(port == 2222)
+        return ipPi;
     return botIP;
 }
 
